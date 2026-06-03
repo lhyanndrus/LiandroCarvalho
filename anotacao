@@ -1,0 +1,24 @@
+package br.com.agencia.destinos;
+
+public class Japao implements Pais {
+
+    @Override
+    public String obterNomeMoeda() {
+        return "Iene Japonês (JPY)";
+    }
+
+    @Override
+    public double converterParaMoedaLocal(double valorEmReais) {
+        // Exemplo de cotação fictícia ou real pesquisar no site
+        // Supondo que 1 Real vale aproximadamente 28 Ienes
+        return valorEmReais * 28.15;
+    }
+
+    @Override
+    public void exibirDicaCultural() {
+
+        // Pesquisar 2 curiosidades do pais
+        System.out.println("- No Japão, não se dá gorjetas! Isso pode ser visto como uma ofensa.");
+        System.out.println("- Ao entregar cartões de visita ou dinheiro, use sempre as duas mãos em sinal de respeito.");
+    }
+}
